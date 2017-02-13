@@ -1,0 +1,12 @@
+app:
+  build: .
+  command: python server.py
+  volumes:
+    - ./src:/app
+  working_dir: /app
+  ports:
+      - "9527:9527"     # UDP端口
+      - "9528:9528"     # telnet 端口
+#  environment:
+#   - DEBUG_PYSOLR= "0"
+#  restart: always
