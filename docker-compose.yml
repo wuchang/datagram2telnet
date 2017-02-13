@@ -5,8 +5,8 @@ app:
     - ./src:/app
   working_dir: /app
   ports:
-      - "9527:9527"     # UDP端口
-      - "9528:9528"     # telnet 端口
+      - "2046:2046"     # UDP端口
+      - "2047:2047"     # telnet 端口
 #  environment:
 #   - DEBUG_PYSOLR= "0"
 #  restart: always
