@@ -14,7 +14,7 @@ def getUDPlogger():
     handler.setFormatter(formatter)
     logger.addHandler(handler)
   
-    h2 = logging.handlers.DatagramHandler('127.0.0.1',9527)
+    h2 = logging.handlers.DatagramHandler('127.0.0.1',2046)
     h2.setFormatter(h2)
 
     logger.addHandler(h2)

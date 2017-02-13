@@ -90,4 +90,4 @@ def main(udpport,telnetport,udphost='0.0.0.0',telnethost='0.0.0.0'):
     reactor.run()
 
 if __name__=="__main__":
-    main(9527,9528)
+    main(2046,2047)
