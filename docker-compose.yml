@@ -9,4 +9,4 @@ app:
       - "2047:2047"     # telnet 端口
 #  environment:
 #   - DEBUG_PYSOLR= "0"
-#  restart: always
+  restart: always
