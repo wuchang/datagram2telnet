@@ -39,7 +39,7 @@ class UdpServerProtocol(protocol.DatagramProtocol):
             obj = pickle.loads(chunk)
             record = logging.makeLogRecord(obj)
             msg = self.loggingFormatter.format(record)
-            jsonstr = msg+'\r\n'
+            jsonstr = msg.replace('\n','\r\n')+'\r\n'
             self.distributer.distribute( jsonstr.encode('utf-8') )
             self.logger.debug('recv log:{0}'.format(jsonstr))
         except Exception as ex:
